@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PanelMesures</class>
+ <widget class="QGroupBox" name="PanelMesures">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>200</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GroupBox</string>
+  </property>
+  <property name="title">
+   <string>Mesures</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLCDNumber" name="lcdNumberTemperature">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(146, 175, 130);</string>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

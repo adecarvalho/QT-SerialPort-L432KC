@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Saé Interface</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/images/cpu.png</normaloff>:/images/cpu.png</iconset>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>251</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>SerialPort</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>211</width>
+       <height>37</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1">
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Name</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBoxSerialName"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>211</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,1">
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Baud</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBoxSerialBaud"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>231</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="pushButtonSerialOpen">
+        <property name="text">
+         <string>Open</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/images/connect.png</normaloff>:/images/connect.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonSerialClose">
+        <property name="text">
+         <string>Close</string>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/images/disconnect.png</normaloff>:/images/disconnect.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>10</y>
+      <width>281</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Terminal</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>258</width>
+       <height>234</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPlainTextEdit" name="plainTextEditTerminal">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(36, 31, 49);
+color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="pushButtonTerminalClear">
+          <property name="text">
+           <string>Clear</string>
+          </property>
+          <property name="icon">
+           <iconset resource="res.qrc">
+            <normaloff>:/images/edit_clear_icon.png</normaloff>:/images/edit_clear_icon.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonTerminalCopy">
+          <property name="text">
+           <string>Copy</string>
+          </property>
+          <property name="icon">
+           <iconset resource="res.qrc">
+            <normaloff>:/images/copy.png</normaloff>:/images/copy.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>251</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Action</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>29</y>
+       <width>221</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="pushButtonActionLedOn">
+        <property name="text">
+         <string>Led ON</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonActionLedOff">
+        <property name="text">
+         <string>Led OFF</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>290</y>
+      <width>281</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Mesure</string>
+    </property>
+    <widget class="QLCDNumber" name="lcdNumber">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>241</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(146,175,130);</string>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>560</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/exit.png</normaloff>:/images/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/help.png</normaloff>:/images/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

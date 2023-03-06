@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PanelTerminal</class>
+ <widget class="QGroupBox" name="PanelTerminal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GroupBox</string>
+  </property>
+  <property name="title">
+   <string>Terminal</string>
+  </property>
+  <widget class="QPlainTextEdit" name="plainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>281</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(36, 31, 49);
+color: rgb(143, 240, 164);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonTerminalClear">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/edit_clear_icon.png</normaloff>:/images/edit_clear_icon.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonTerminalCopy">
+   <property name="geometry">
+    <rect>
+     <x>179</x>
+     <y>260</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/copy.png</normaloff>:/images/copy.png</iconset>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

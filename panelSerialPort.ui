@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PanelSerialPort</class>
+ <widget class="QGroupBox" name="PanelSerialPort">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>200</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GroupBox</string>
+  </property>
+  <property name="title">
+   <string>SerialPort</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBoxSerialName"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,1">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Baud</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBoxSerialBaud"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Preferred</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButtonSerialOpen">
+     <property name="text">
+      <string>Open</string>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/images/connect.png</normaloff>:/images/connect.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButtonSerialClose">
+     <property name="text">
+      <string>Close</string>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/images/disconnect.png</normaloff>:/images/disconnect.png</iconset>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

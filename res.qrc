@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>connect.png</file>
+        <file>copy.png</file>
+        <file>cut.png</file>
+        <file>disconnect.png</file>
+        <file>exit.png</file>
+        <file>help.png</file>
+        <file>search.png</file>
+        <file>weather.png</file>
+        <file>edit_clear_icon.png</file>
+        <file>cpu.png</file>
+    </qresource>
+</RCC>
